@@ -1,0 +1,12 @@
+version: '3.6'
+
+services:
+  rabbitmq-stomp:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: rabbit
+    ports:
+      - 61613:61613
+      - 15674:15674
+      - 5672:5672
